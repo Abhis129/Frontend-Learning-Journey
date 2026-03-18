@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+
+    <!-- All you need to learn about Form type elements -->
+     
+    <!-- Forms are used to collect data form the user.
+    <form> Content </form> -->
+    <h2>Registration Form</h2>
+    <form action="/action.php">
+        <!-- <input type="text" placeholder="Type something here"> -->
+        <br>
+        Username: <input type="text" placeholder="Enter Username">
+        <br><br>
+        Password: <input type="password" placeholder="Enter password">
+        <br><br>
+
+        <!-- Label:- The <label> tag in HTML is used to associate a text label with a form control (like <input>, <textarea>, <select>, etc.). It improves accessibility and usability by making the form easier to interact with.-->
+        <h3>Select Your Class</h3>
+        <label for="101">
+            <input type="radio" value="XI" name="class" id="101">Class XI
+        </label>
+        <label for="102">
+            <input type="radio" value="XII" name="class" id="102">Class XII
+        </label>
+        <br>
+        <br>
+
+        <!-- (1.) Radio is used to show option to the user but user can only choose one of them. (2.) ID is used to distinguish each input element and make it unique. (3.) Value attribute is used to send its value to the backend when the user select it like <input type="radio" value="XI" name="class XI" id="101">Class XI when i will select this input button the Class XII will not go to the backend unstead whatever value is there in the attribute in value will be sent back to the user. All the attributes value, name, will be sent back to the backend -->
+
+        <!-- Class is used to group multiple elements. For example group of class X and group of class XII then we can apply css to each group and we dont have to goto each elements and write their property -->
+        <h3>Subjects</h3>
+        <label for="eng">
+            <input type="checkbox" value="eng" name="subject" id="103"> English
+        </label>
+        <label for="phy">
+            <input type="checkbox" value="phy" name="subject" id="104"> Physics
+        </label>
+        <label for="maths">
+            <input type="checkbox" value="maths" name="subject" id="105"> Maths
+        </label>
+        <label for="cs">
+            <input type="checkbox" value="cs" name="subject" id="106"> Computer Science
+        </label>
+        <br><br>
+
+        <textarea name="feedback" id="107" placeholder="Please give your feedback here." rows="5">Feedback</textarea>
+        <br><br>
+        Select your City:
+        <Select name="City">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Vadodara">Vadodara</option>
+            <option value="Chennai">Chennai</option>
+        </Select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
