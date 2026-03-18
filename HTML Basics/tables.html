@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>HTML Tables </title>
+</head>
+<body>
+
+    <!-- 1. BASIC TABLE STRUCTURE -->
+
+    <!-- 
+        <table>   : Creates a table
+        <caption> : Title of the table
+        <thead>   : Header section
+        <tbody>   : Main content
+        <tr>      : Table row
+        <th>      : Header cell (bold by default)
+        <td>      : Data cell
+    -->
+
+    <table>
+        <caption>Student Data</caption>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No.</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>Abhishek Pandey</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Parth</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- 2. USING COLSPAN -->
+
+    <!-- 
+        colspan="2" means:
+        This cell will span across 2 columns
+    -->
+
+    <table>
+        <caption>Grocery List</caption>
+
+        <thead>
+            <tr>
+                <!-- One heading covering both columns -->
+                <th colspan="2">Grocery Items</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Tomatoes</td>
+                <td>50 Rupees</td>
+            </tr>
+            <tr>
+                <td>Pasta</td>
+                <td>200 Rupees</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <!-- 3. USING ROWSPAN -->
+
+    <!-- 
+        rowspan="2" means:
+        This cell will span across 2 rows
+    -->
+
+    <table>
+        <caption>Weekly Schedule</caption>
+
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Activity</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td>Gym</td>
+            </tr>
+            <tr>
+                <td>Study</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!--
+        Key Concepts Covered:
+        ✔ Basic table structure
+        ✔ thead & tbody usage
+        ✔ colspan (merge columns)
+        ✔ rowspan (merge rows)
+    -->
+
+</body>
+</html>
