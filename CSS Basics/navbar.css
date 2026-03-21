@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #131921;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Logo */
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Location */
+.nav-location {
+    cursor: pointer;
+}
+
+/* Search Bar */
+.nav-search {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.nav-search select {
+    padding: 8px;
+    border: none;
+}
+
+.nav-search input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+}
+
+.nav-search button {
+    padding: 8px 12px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+
+/* Account & Orders */
+.nav-account, .nav-orders {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Cart */
+.nav-cart {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Text styles */
+.small-text {
+    font-size: 12px;
+}
+
+.bold-text {
+    font-size: 14px;
+    font-weight: bold;
+}
