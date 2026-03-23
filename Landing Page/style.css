@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+/* SKILLS */
+.skills {
+    text-align: center;
+    padding: 50px;
+}
+
+.skill-icons img {
+    width: 60px;
+    margin: 10px;
+}
+
+/* PROJECTS */
+.projects {
+    padding: 50px;
+    text-align: center;
+}
+
+.project-card {
+    margin: 20px;
+}
+
+.project-card img {
+    width: 300px;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background: #f4f4f4;
+}
