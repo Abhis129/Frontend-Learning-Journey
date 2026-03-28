@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  padding: 40px;
+  background-color: lightblue;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .box {
+    background-color: lightcoral;
+  }
+}
